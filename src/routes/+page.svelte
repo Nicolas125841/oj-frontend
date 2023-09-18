@@ -1,31 +1,22 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import welcome from '$lib/images/osu-welcome.svg';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>BeavesOJ</title>
+	<meta name="description" content="OJ for ACM chapter at Oregon State University" />
 </svelte:head>
 
 <section>
 	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
+				<img src={welcome} alt="Welcome" />
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		A contest platform and problem repository for ICPC preparation.
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
 <style>
@@ -53,7 +44,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		top: 0;
+		top: -25%;
 		display: block;
 	}
 </style>

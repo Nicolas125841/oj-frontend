@@ -1,4 +1,5 @@
 <script>
+	import '../app.postcss';
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
@@ -11,7 +12,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Provided by the <a href="http://acm.oregonstate.edu/">ACM Chapter</a> at OSU.</p>
 	</footer>
 </div>
 
