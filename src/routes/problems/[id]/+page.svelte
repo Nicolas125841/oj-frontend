@@ -20,11 +20,11 @@
         Py: '.py'
     };
     
-    let selected = Langs.Java;
+    let selected = 'Java 17';
     let languages = [
-        { value: Langs.Java, name: 'Java 18', selected: true },
-        { value: Langs.C, name: 'C 98' },
-        { value: Langs.Cpp, name: 'C++ 20' },
+        { value: 'Java 17', name: 'Java 17', selected: true },
+        { value: 'C 98', name: 'C 98' },
+        { value: 'C++ 17', name: 'C++ 17' },
         { value: Langs.Py, name: 'Python 3'}
     ];
 
