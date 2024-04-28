@@ -70,14 +70,19 @@
                 input: new Blob([input], { type: 'text/plain' })
             }
         ).then(result => {
-            output = result.data;
+            output = 
+                `Status: ${result.data.status}\n` +
+                `Time (ms): ${Math.floor(result.data.time / 1000)} Memory (mb): ${Math.floor(result.data.memory / 1000000)}\n` +
+                (result.data.status === 'SUCCESS' || result.data.status === 'TIMEOUT' ?
+                `---- Output ----\n${result.data.output}\n[END/TRUNCATE]\n` :
+                `---- Info ----\n${result.data.info}\n[END/TRUNCATE]\n`);
         }).catch(error => {
             console.error(error);
         });
     };
 
     const submit = (event: MouseEvent) => {
-        output = 'Testing...';
+        output = 'Running...';
 
         axios.postForm(
             `http://127.0.0.1:8080/submit/${metadata.id}`, 
@@ -87,7 +92,10 @@
                 input: new Blob([''], { type: 'text/plain' })
             }
         ).then(result => {
-            output = result.data;
+            output = 
+                `Status: ${result.data.status}\n` +
+                `Time (ms): ${Math.floor(result.data.time / 1000)} Memory (mb): ${Math.floor(result.data.memory / 1000000)}\n` +
+                `Info: ${result.data.info}\n`;
         }).catch(error => {
             console.error(error);
         });
@@ -111,7 +119,7 @@
         styles={{
             "&": {
                 width: "100%",
-                height: "10rem"
+                height: "20rem"
             }
         }} 
         class="rounded-md border-4"
