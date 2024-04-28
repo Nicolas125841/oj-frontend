@@ -99,8 +99,8 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
 
-  /@codemirror/autocomplete/6.9.0_qqljbauqjojs4rscsqre6mawlm:
-    resolution: {integrity: sha512-Fbwm0V/Wn3BkEJZRhr0hi5BhCo5a7eBL6LYaliPjOSwCyfOpnjXY59HruSxOUNV+1OYer0Tgx1zRNQttjXyDog==}
+  /@codemirror/autocomplete/6.16.0_qqljbauqjojs4rscsqre6mawlm:
+    resolution: {integrity: sha512-P/LeCTtZHRTCU4xQsa89vSKWecYv1ZqwzOd5topheGRf+qtacFgBeIMQi3eL8Kt/BUNvxUWkx+5qP2jlGoARrg==}
     peerDependencies:
       '@codemirror/language': ^6.0.0
       '@codemirror/state': ^6.0.0
@@ -138,7 +138,7 @@ packages:
   /@codemirror/lang-python/6.1.3_wjvbqwn5xht4hmxttrop2angdm:
     resolution: {integrity: sha512-S9w2Jl74hFlD5nqtUMIaXAq9t5WlM0acCkyuQWUUSvZclk1sV+UfnpFiZzuZSG+hfEaOmxKR5UxY/Uxswn7EhQ==}
     dependencies:
-      '@codemirror/autocomplete': 6.9.0_qqljbauqjojs4rscsqre6mawlm
+      '@codemirror/autocomplete': 6.16.0_qqljbauqjojs4rscsqre6mawlm
       '@codemirror/language': 6.9.0
       '@lezer/python': 1.1.8
     transitivePeerDependencies:
@@ -1083,7 +1083,7 @@ packages:
   /codemirror/6.0.1:
     resolution: {integrity: sha512-J8j+nZ+CdWmIeFIGXEFbFPtpiYacFMDR8GlHK3IyHQJMCaVRfGx9NT+Hxivv1ckLWPvNdZqndbr/7lVhrf/Svg==}
     dependencies:
-      '@codemirror/autocomplete': 6.9.0_qqljbauqjojs4rscsqre6mawlm
+      '@codemirror/autocomplete': 6.16.0_qqljbauqjojs4rscsqre6mawlm
       '@codemirror/commands': 6.2.4
       '@codemirror/language': 6.9.0
       '@codemirror/lint': 6.4.0

@@ -8,17 +8,10 @@
     import { java } from "@codemirror/lang-java";
     import { cpp } from "@codemirror/lang-cpp";
     import { python } from "@codemirror/lang-python";
-    import {clouds} from 'thememirror';
+    import { ayuLight } from 'thememirror';
     import axios from 'axios';
     
     export let data: PageData;
-
-    const Langs = {
-        Java: '.java',
-        C: '.c',
-        Cpp: '.cpp',
-        Py: '.py'
-    };
     
     let selected = 'Java 17';
     let languages = [
@@ -32,10 +25,10 @@
 
     $: {
         switch(selected){
-            case Langs.Java: 
+            case 'Java 17': 
                 langSelect = java();
                 break;
-            case Langs.Py:
+            case 'Python 3':
                 langSelect = python();
                 break;
             default:
@@ -114,7 +107,7 @@
     <CodeMirror 
         bind:value 
         lang={langSelect} 
-        theme={clouds}
+        theme={ayuLight}
         styles={{
             "&": {
                 width: "100%",
